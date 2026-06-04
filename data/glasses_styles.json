@@ -1,0 +1,32 @@
+{
+  "oval": [
+    "Cat-Eye",
+    "Rectangular",
+    "Round",
+    "Clubmaster"
+  ],
+  "round": [
+    "Rectangular",
+    "Square",
+    "Geometric",
+    "Wayfarer"
+  ],
+  "square": [
+    "Round",
+    "Oval",
+    "Clubmaster",
+    "Cat-Eye"
+  ],
+  "heart": [
+    "Bottom-Heavy",
+    "Round",
+    "Oval",
+    "Aviator"
+  ],
+  "oblong": [
+    "Wayfarer",
+    "Clubmaster",
+    "Browline",
+    "Round"
+  ]
+}
