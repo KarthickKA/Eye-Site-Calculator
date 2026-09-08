@@ -62,7 +62,7 @@ if uploaded:
         if face_landmarks.face_landmarks:
             st.success("✓ Face Detected")
             st.write(f"Landmarks detected: {len(face_landmarks.face_landmarks[0])} points")
-            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_column_width=True)
+            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
         else:
             st.error("✗ No face detected. Please ensure your face is clearly visible.")
 
@@ -119,11 +119,11 @@ if uploaded:
                 with col1:
                     st.write("**Left Eye**")
                     st.image(cv2.cvtColor(results['left_eye_image'], cv2.COLOR_BGR2RGB),
-                            use_column_width=True)
+                            use_container_width=True)
                 with col2:
                     st.write("**Right Eye**")
                     st.image(cv2.cvtColor(results['right_eye_image'], cv2.COLOR_BGR2RGB),
-                            use_column_width=True)
+                            use_container_width=True)
         else:
             st.error("Face not detected. Please take a clearer photo.")
 
@@ -145,7 +145,7 @@ if uploaded:
 
             with col1:
                 st.image(cv2.cvtColor(results['image_with_outline'], cv2.COLOR_BGR2RGB),
-                        use_column_width=True)
+                        use_container_width=True)
 
             with col2:
                 st.metric("Face Shape", results['shape'], f"{results['confidence']}% confidence")
@@ -192,11 +192,11 @@ if uploaded:
 
             with col1:
                 st.write("**Original**")
-                st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_column_width=True)
+                st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
 
             with col2:
                 st.write("**With Glasses**")
-                st.image(cv2.cvtColor(result_image, cv2.COLOR_BGR2RGB), use_column_width=True)
+                st.image(cv2.cvtColor(result_image, cv2.COLOR_BGR2RGB), use_container_width=True)
 
             st.download_button(
                 label="Download Image with Glasses",
